@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>GRIP Bank | Online Banking</title>
+<style>
+        /* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: #93cb52;
+}
+.logo{
+    background: #fff;
+    border-radius: 50%;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: rgba(55, 55, 55, 0.75);
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+
+}
+h1{
+    font-size: 35px;    
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover, #navbar ul li a.current{
+    background: #93cb52;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Showcase */
+#showcase{
+    background: rgba(48, 53, 63, 0.8);
+    background-blend-mode: darken;
+    background-image: url(img/background.png);
+    height: 91vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.info{
+    display: flex;
+    color: #fff;
+    font-size: 1.2rem;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px;
+    margin-top: 90px;
+    padding: 40px;
+    border-radius: 5px;    
+}
+.info-content{
+    font-size: 1.25rem;
+}
+
+/* Features */
+.feature{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.button{
+    padding: 15px 35px;
+    background: rgba(66, 72, 82, 0.75);
+    color: #fff;
+    outline:none ;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}    
+.button:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+    background: rgba(66, 72, 82);        
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+.about .img{
+    /* float: left; */
+    width: 33.33%;
+    background: url(img/etienne-martin-2_K82gx9Uk8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about .img1{
+    width: 33.33%;
+    background: url(img/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about .about-content {
+    /* float: right; */
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    background: #333;
+    color: #fff;
+}
+
+.about .about-content p{
+    padding-bottom: 30px;
+}
+
+</style>
+</head>
+<body>
+  <nav id="navbar">
+    <h1><span><i><img class="logo" src="img/logo.png" alt="" width="37" height="37"></i> GRIP</span> Bank</h1>
+    <ul>
+      <li><a class="current" href="index.html">Home</a></li>
+      <li><a href="users.php">Users</a></li>
+      <li><a href="History.php">History</a></li>
+    </ul>
+  </nav>
+
+  <section id="showcase">
+    <div class="info">
+      <h1 class="title">Welcome To <span>GRIP</span> Bank</h1>
+      <br>
+      <p class="info-content">No more waiting in the long queues ,transfer the money very conveniently with the help of our GRIP Bank , a digital wallet platform and online payment system developed to power in-app, online, and in-person contactless transactions.</p>
+      
+      <div class="feature">
+          <a href="users.php"><button class="button" >Our Customers</button></a>
+          <a href="history.php"><button class="button" >Transaction History</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about bg-dark">
+    <div class="img"></div>
+    <div class="about-content">
+        <h1><span class="text-primary">About</span> Us</h1>
+        <br>
+        <p>
+          GRIP Bank contains all Customers information with basic features, the possiblity for execution of payment transactions and every transaction history of each account holders.
+        </p>
+        <p>
+          We provide multiple levels of Security for transaction,
+          Fast and Secure payments. <br>
+          An easy way to send and receive money easily with our bank.
+        </p>
+    </div>
+    <div class="img1"></div>
+</section>
+</body>
+</html>
